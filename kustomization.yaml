@@ -4,7 +4,10 @@ kind: Kustomization
 
 resources:
 - crd.yaml
+- cr.yaml
 
 patchesStrategicMerge:
-- patch.yaml
+- crdpatch.yaml
+- crpatch.yaml
+
 

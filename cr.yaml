@@ -1,0 +1,27 @@
+apiVersion: metallb.io/v1beta1
+kind: IPAddressPool
+metadata:
+  generation: 1
+  managedFields:
+    - apiVersion: metallb.io/v1beta1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          .: {}
+          f:addresses: {}
+          f:autoAssign: {}
+          f:avoidBuggyIPs: {}
+      manager: kubectl-create
+      operation: Update
+      time: '2022-11-03T02:55:20Z'
+  name: default
+  namespace: metallb-system
+  resourceVersion: '13631'
+  uid: 704ec7cc-88da-4778-ba1b-e2c29095cdc0
+  selfLink: /apis/metallb.io/v1beta1/namespaces/metallb-system/ipaddresspools/default
+spec:
+  addresses:
+    - 192.168.0.180-192.168.0.190
+  autoAssign: true
+  avoidBuggyIPs: true
+
