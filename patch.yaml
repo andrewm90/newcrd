@@ -63,7 +63,7 @@ spec:
                   allocation for a pool.
                 type: boolean
               avoidBuggyIPs:
-                default: true
+                default: false
                 description: AvoidBuggyIPs prevents addresses ending with .0 and .255
                   to be used by a pool.
                 type: boolean
